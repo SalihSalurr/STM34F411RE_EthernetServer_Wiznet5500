@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ithinka ithinka, ithinka, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\ithinka\Desktop\STM32\EthernetServer_W5500\MDK-ARM\EthernetServer_W5500.uvprojx
+Project File Date:  02/01/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'EthernetServer_W5500'
+assembling startup_stm32f411xe.s...
+compiling w5100.c...
+compiling loopback.c...
+compiling w5500.c...
+compiling socket.c...
+compiling wizchip_conf.c...
+compiling cJSON_Utils.c...
+compiling cJSON.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling main.c...
+../Core/Src/main.c(115): warning:  #223-D: function "sprintf" declared implicitly
+    PRINT_NETINFO(netInfo);
+../Core/Src/main.c(125): warning:  #1293-D: assignment in condition
+  		  while(sockStatus = getSn_SR(0) == SOCK_LISTEN) {
+../Core/Src/main.c(132): warning:  #1293-D: assignment in condition
+  			  if(sockStatus = getSn_SR(0) == SOCK_ESTABLISHED) {
+../Core/Src/main.c(140): warning:  #223-D: function "sprintf" declared implicitly
+  				  sprintf(msg, CONN_ESTABLISHED_MSG, remoteIP[0], remoteIP[1], remoteIP[2], remoteIP[3], remotePort);
+../Core/Src/main.c(143): warning:  #1293-D: assignment in condition
+  				  if(retVal = send(0, GREETING_MSG, strlen(GREETING_MSG)) == (int16_t)strlen(GREETING_MSG))
+../Core/Src/main.c(153): warning:  #223-D: function "sprintf" declared implicitly
+  				  sprintf(msg, WRONG_STATUS_MSG, sockStatus);
+../Core/Src/main.c(163): warning:  #223-D: function "sprintf" declared implicitly
+  	  sprintf(msg, WRONG_RETVAL_MSG, retVal);
+../Core/Src/main.c(174): warning:  #128-D: loop is not reachable
+    while (1)
+../Core/Src/main.c(91): warning:  #177-D: variable "rcvLen"  was declared but never referenced
+    int16_t rcvLen;
+../Core/Src/main.c(92): warning:  #177-D: variable "rcvBuf"  was declared but never referenced
+    uint8_t rcvBuf[20], bufSize[] = {2, 2, 2, 2};
+../Core/Src/main.c(370): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c: 11 warnings, 0 errors
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_tim.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_uart.c...
+linking...
+Program Size: Code=10908 RO-data=544 RW-data=84 ZI-data=1868  
+FromELF: creating hex file...
+"EthernetServer_W5500\EthernetServer_W5500.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_EthernetServer_W5500
+  C:\Users\ithinka\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\ithinka\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

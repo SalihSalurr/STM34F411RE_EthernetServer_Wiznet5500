@@ -1,0 +1,10 @@
+ethernetserver_w5500\cjson.o: ..\Core\Src\cJSON.c
+ethernetserver_w5500\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+ethernetserver_w5500\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+ethernetserver_w5500\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+ethernetserver_w5500\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+ethernetserver_w5500\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+ethernetserver_w5500\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+ethernetserver_w5500\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+ethernetserver_w5500\cjson.o: ../Core/Inc/cJSON.h
+ethernetserver_w5500\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
